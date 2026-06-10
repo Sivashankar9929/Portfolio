@@ -12,8 +12,8 @@ Hosted on Azure Static Web Apps / Azure App Service.
 
 > Replace the link below with your actual production URL once available.
 
-- Live site: `https://<your-azure-site>.azurestaticapps.net`
-- Live status page: `https://<your-azure-status-page-url>`
+- Live site:  https://sivashankar9929.github.io/Portfolio/
+- Live status page: https://sivaportfolio.z29.web.core.windows.net/
 
 ## Built With
 
