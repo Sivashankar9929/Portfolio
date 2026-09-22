@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katta Siva Shankar | Cloud & DevSecOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-center">
+      <h1 class="loader-name">KATTA <span>SIVA</span> SHANKAR</h1>
+    </div>
+    <div class="loader-bottom">
+      <div class="loader-status" id="loaderStatus">Connecting to Siva Shankar workspace<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></div>
+      <div class="loader-bar-row">
+        <div class="loader-bar-wrap">
+          <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+        </div>
+        <span class="loader-pct" id="loaderPct">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-brand">
+      <div class="brand-hex">KSS</div>
+      <div class="brand-sep"></div>
+      <span class="brand-full">Katta Siva Shankar</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-a active">Home</a></li>
+      <li><a href="#about" class="nav-a">About</a></li>
+      <li><a href="#skills" class="nav-a">Skills</a></li>
+      <li><a href="#certifications" class="nav-a">Certs</a></li>
+      <li><a href="#projects" class="nav-a">Projects</a></li>
+      <li><a href="#achievements" class="nav-a">Achievements</a></li>
+      <li><a href="#contact" class="nav-a">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-status"><span class="ns-dot"></span><span>Available for Work</span></div>
+      <a href="Katta_Siva_Shankar_Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-a">Home</a></li>
+      <li><a href="#about" class="mob-a">About</a></li>
+      <li><a href="#skills" class="mob-a">Skills</a></li>
+      <li><a href="#certifications" class="mob-a">Certs</a></li>
+      <li><a href="#projects" class="mob-a">Projects</a></li>
+      <li><a href="#achievements" class="mob-a">Achievements</a></li>
+      <li><a href="#contact" class="mob-a">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO + ABOUT (shared scope so the profile card can stay pinned while scrolling) -->
+  <section class="hero">
+    <div class="intro-scope">
+
+      <div class="intro-left">
+        <div class="intro-block intro-block-hero" id="home">
+          <div class="hero-badge"><i class="fa-solid fa-rocket"></i><span>Welcome to My Space</span></div>
+          <div class="hero-intro">
+            <p class="intro-hi">Hi, I'm</p>
+            <h1 class="hero-name">Katta <span class="name-accent">Siva</span> Shankar</h1>
+          </div>
+          <div class="hero-tw-row"><span id="twText"></span><span class="tw-cur" id="twCur">|</span></div>
+          <p class="hero-desc">Building secure, automated cloud infrastructure on Azure &amp; AWS. Turning complexity into clean, scalable systems with Terraform, Kubernetes &amp; CI/CD pipelines.</p>
+          <div class="tech-pills">
+            <span class="tp"><i class="fa-brands fa-microsoft"></i> Azure</span>
+            <span class="tp"><i class="fa-brands fa-aws"></i> AWS</span>
+            <span class="tp"><i class="fa-solid fa-cubes"></i> Terraform</span>
+            <span class="tp"><i class="fa-brands fa-docker"></i> Docker</span>
+            <span class="tp"><i class="fa-solid fa-circle-nodes"></i> Kubernetes</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">Explore Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn-ghost">Let's Talk</a>
+          </div>
+          <div class="deploying-strip">
+            <span class="ds-label"><span class="ds-dot"></span> CURRENTLY DEPLOYING:</span>
+            <div class="ds-items">
+              <span class="ds-pill"><i class="fa-solid fa-shield-halved"></i> DevSecOps Pipelines</span>
+              <span class="ds-pill"><i class="fa-solid fa-cubes"></i> Terraform on Azure</span>
+              <span class="ds-pill"><i class="fa-brands fa-docker"></i> K8s Workloads</span>
+            </div>
+          </div>
+          <div class="fast-access">
+            <span class="fa-label">FAST ACCESS:</span>
+            <a href="https://github.com/Sivashankar9929" target="_blank" rel="noopener" class="fa-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/katta-siva-shankar-004937258" target="_blank" rel="noopener" class="fa-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:Sivashankar9929@gmail.com" class="fa-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-right">
+        <div class="profile-card-wrap">
+          <div class="profile-card">
+            <div class="pc-corner pc-tl"></div><div class="pc-corner pc-tr"></div>
+            <div class="pc-scanline"></div>
+            <div class="pc-avatar-wrap">
+              <div class="pc-ring r1"></div><div class="pc-ring r2"></div>
+              <div class="pc-avatar">
+                <img src="Passport Photo linkedin.jpeg" alt="Katta Siva Shankar avatar" />
+              </div>
+              <div class="pc-status-dot" title="Available for Work"></div>
+            </div>
+            <div class="pc-info">
+              <h3>Katta Siva Shankar</h3>
+              <p class="pc-role">Cloud &amp; DevSecOps Engineer</p>
+              <p class="pc-loc"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+            </div>
+            <div class="pc-corner pc-bl"></div><div class="pc-corner pc-br"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="sec-eyebrow"><i class="fa-solid fa-user-astronaut"></i> About Me</div>
+          <h2 class="sec-heading">Building Cloud<br><em>From The Ground Up</em></h2>
+          <div class="about-content">
+            <p class="about-intro">B.Tech CSE graduate with practical Multi-Cloud DevSecOps experience across Azure and AWS. I have delivered real-world cloud deployments using ARM templates and Terraform for repeatable Azure infrastructure, Docker and ACR for container image workflows, AKS for Kubernetes orchestration, and Azure DevOps pipelines for automated build-test-release delivery.</p>
+            <p class="about-intro" style="margin-top:4px">I am looking for a Cloud or DevOps Engineer role where I can apply this hands-on experience to build secure, automated infrastructure and reliable deployment pipelines.</p>
+            <div class="about-traits">
+              <div class="trait"><i class="fa-solid fa-robot"></i><span>Automation-First</span></div>
+              <div class="trait"><i class="fa-solid fa-shield-halved"></i><span>Security-Minded</span></div>
+              <div class="trait"><i class="fa-solid fa-brain"></i><span>Self-Taught</span></div>
+              <div class="trait"><i class="fa-solid fa-bolt"></i><span>Problem Solver</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card about-card-wide about-summary">
+          <div class="ac-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <div>
+            <h4>Professional Summary</h4>
+            <p>Motivated DevOps Engineer graduate trained in Multi-Cloud DevSecOps practices across Azure and AWS, with hands-on project experience in CI/CD pipeline design, containerization, and infrastructure automation. Built and deployed real-world cloud projects using Terraform, Docker, Kubernetes, and Azure DevOps, covering everything from infrastructure provisioning to container orchestration. Comfortable working across Linux environments and passionate about bridging development and operations to deliver reliable, automated infrastructure. Seeking an entry-level DevOps Engineer or Cloud Engineer role to bring this hands-on foundation into a production environment.</p>
+          </div>
+        </div>
+
+        <div class="about-side">
+          <div class="about-card about-card-wide">
+            <div class="ac-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h4>Education</h4>
+              <p>B.Tech CSE · 2025 · VSM College of Engineering · Ramachandrapuram</p>
+            </div>
+          </div>
+          <div class="about-card about-card-wide">
+            <div class="ac-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <h4>Open to Work</h4>
+              <div class="about-role-pills">
+                <span class="about-role-pill">Cloud Engineer</span>
+                <span class="about-role-pill">DevOps Engineer</span>
+                <span class="about-role-pill">DevSecOps Engineer</span>
+              </div>
+              <p><span class="about-avail-dot"></span>Immediate joiner · Open to Hyderabad, Bangalore, Chennai &amp; Remote</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-highlights">
+        <h3 class="ah-title">What I Bring to the Table</h3>
+        <p class="ah-intro">Through hands-on training and independent projects, I've built an ownership-driven approach to infrastructure — designing for automation, security, and reliability from the first commit, not bolting it on afterward.</p>
+        <div class="ah-grid">
+          <div class="ah-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>Infrastructure as Code &amp; Automation</h4>
+              <p>Provisioned complete Azure environments — VNet, NSGs, App Service, Storage — with modular Terraform, remote state, and CI/CD-triggered plan/apply workflows.</p>
+            </div>
+          </div>
+          <div class="ah-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>CI/CD Pipeline Engineering</h4>
+              <p>Built end-to-end Azure DevOps YAML pipelines automating build, test, security scan, and deployment with zero manual steps.</p>
+            </div>
+          </div>
+          <div class="ah-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>Containerization &amp; Orchestration</h4>
+              <p>Containerized Java and .NET apps with multi-stage Docker builds, and deployed Kubernetes manifests with Helm and HPA on AKS.</p>
+            </div>
+          </div>
+          <div class="ah-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>DevSecOps &amp; Security Scanning</h4>
+              <p>Embedded SonarQube, Trivy, and Checkov into pipelines to catch vulnerabilities and misconfigurations before they reach production.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ah-stats">
+          <div class="ah-stat"><i class="fa-solid fa-diagram-project"></i><span class="ah-stat-n">5+</span><span class="ah-stat-l">Projects Built</span></div>
+          <div class="ah-stat"><i class="fa-solid fa-certificate"></i><span class="ah-stat-n">4</span><span class="ah-stat-l">Certifications</span></div>
+          <div class="ah-stat"><i class="fa-solid fa-cloud"></i><span class="ah-stat-n">2</span><span class="ah-stat-l">Cloud Platforms</span></div>
+          <div class="ah-stat"><i class="fa-solid fa-robot"></i><span class="ah-stat-n">100%</span><span class="ah-stat-l">Pipeline Automation</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="sec-eyebrow"><i class="fa-solid fa-layer-group"></i> Expertise</div>
+      <h2 class="sec-heading">Skills &amp; <em>Stack</em></h2>
+      <p class="sec-sub">Hover — or tap on mobile — any card to flip it and reveal tools, services &amp; real usage. A battle-tested stack covering the full cloud engineering lifecycle.</p>
+      <div class="skills-grid">
+
+        <!-- 1. CI/CD & Automation -->
+        <div class="flip-card-wrapper" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front cicd-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+              <h3 class="flip-front-title">CI/CD &amp; Automation</h3>
+              <p class="flip-front-sub">Azure DevOps · Bash Scripting</p>
+              <div class="flip-front-tags">
+                <span class="ftag"><i class="fa-brands fa-microsoft"></i> Azure DevOps</span>
+                <span class="ftag"><i class="fa-solid fa-terminal"></i> Bash Scripting</span>
+                <span class="ftag">YAML Pipelines</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back cicd-theme-back">
+              <div class="flip-back-header"><i class="fa-solid fa-arrows-rotate"></i><span>CI/CD &amp; Automation</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">3</span><span class="fbs-lbl">Pipelines</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">0</span><span class="fbs-lbl">Manual Steps</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">98%</span><span class="fbs-lbl">Pass Rate</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-wrench"></i> Tools Used</div>
+                <div class="fbs-tools"><span>Azure DevOps</span><span>Classic &amp; YAML Pipelines</span><span>Bash Scripting</span><span>Variable Groups</span><span>Approval Gates</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> ElectroGo end-to-end Terraform + AKS release pipeline</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Bash bootstrap scripts for VM &amp; agent automation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Containers & Orchestration -->
+        <div class="flip-card-wrapper sc-wide" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front docker-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-brands fa-docker"></i></div>
+              <h3 class="flip-front-title">Containers &amp; Orchestration</h3>
+              <p class="flip-front-sub">Docker · Kubernetes · Helm · Registries</p>
+              <div class="flip-front-tags">
+                <span class="ftag ftag-dk"><i class="fa-brands fa-docker"></i> Docker</span>
+                <span class="ftag">Docker Compose</span>
+                <span class="ftag"><i class="fa-solid fa-circle-nodes"></i> Kubernetes (K8s)</span>
+                <span class="ftag"><i class="fa-solid fa-anchor"></i> Helm Charts</span>
+                <span class="ftag">Docker Hub</span>
+                <span class="ftag">Amazon ECR</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back docker-theme-back">
+              <div class="flip-back-header"><i class="fa-brands fa-docker"></i><span>Containers &amp; Orchestration</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">3</span><span class="fbs-lbl">Projects</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">6</span><span class="fbs-lbl">Tools</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">−60%</span><span class="fbs-lbl">Image Size</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-wrench"></i> Tools Used</div>
+                <div class="fbs-tools"><span>Docker</span><span>Docker Compose</span><span>Kubernetes (K8s)</span><span>AKS</span><span>Helm Charts</span><span>HPA</span><span>Docker Hub</span><span>Amazon ECR</span><span>Azure ACR</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Multi-stage Docker builds — ~60% smaller images</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> ElectroGo on AKS with Helm-packaged releases + HPA</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Image promotion across Docker Hub, ACR &amp; ECR</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Cloud Platforms — bookend, full width -->
+        <div class="flip-card-wrapper sc-full" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front cloud-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-solid fa-cloud"></i></div>
+              <h3 class="flip-front-title">Cloud Platforms</h3>
+              <p class="flip-front-sub">Azure · AWS · Multi-cloud networking &amp; compute</p>
+              <div class="flip-front-tags">
+                <span class="ftag ftag-az"><i class="fa-brands fa-microsoft"></i> Azure</span>
+                <span class="ftag">VNet Peering</span>
+                <span class="ftag">NSG</span>
+                <span class="ftag">Load Balancer</span>
+                <span class="ftag">App Gateway</span>
+                <span class="ftag">App Service</span>
+                <span class="ftag">VMSS</span>
+                <span class="ftag">Storage Account</span>
+                <span class="ftag">Azure Monitor</span>
+                <span class="ftag ftag-aws"><i class="fa-brands fa-aws"></i> AWS</span>
+                <span class="ftag">EC2</span>
+                <span class="ftag">S3</span>
+                <span class="ftag">VPC</span>
+                <span class="ftag">EKS</span>
+                <span class="ftag">CloudWatch</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back cloud-theme-back">
+              <div class="flip-back-header"><i class="fa-solid fa-cloud"></i><span>Cloud Platforms</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">2</span><span class="fbs-lbl">Clouds</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">13</span><span class="fbs-lbl">Services</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">5+</span><span class="fbs-lbl">Deployments</span></div>
+              </div>
+              <div class="flip-back-cols">
+                <div class="flip-back-section">
+                  <div class="fbs-title fbs-title-az"><i class="fa-brands fa-microsoft"></i> Microsoft Azure</div>
+                  <div class="fbs-tools"><span>VNet Peering</span><span>NSG</span><span>Load Balancer</span><span>Application Gateway</span><span>App Service</span><span>VMSS</span><span>Storage Account</span><span>Azure Monitor</span></div>
+                </div>
+                <div class="flip-back-section">
+                  <div class="fbs-title fbs-title-aws"><i class="fa-brands fa-aws"></i> Amazon Web Services</div>
+                  <div class="fbs-tools"><span>EC2</span><span>S3</span><span>VPC</span><span>EKS</span><span>CloudWatch</span></div>
+                </div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Two-tier Azure architecture with peered VNets, NSGs &amp; Load Balancer</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> AWS EC2 + S3 + VPC + IAM configuration exercises</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. IaC & Config Management -->
+        <div class="flip-card-wrapper" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front iac-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h3 class="flip-front-title">IaC &amp; Config Mgmt</h3>
+              <p class="flip-front-sub">Terraform · Ansible · ARM</p>
+              <div class="flip-front-tags">
+                <span class="ftag ftag-tf"><i class="fa-solid fa-hashtag"></i> Terraform</span>
+                <span class="ftag"><i class="fa-solid fa-list-check"></i> Ansible</span>
+                <span class="ftag">ARM Templates</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back iac-theme-back">
+              <div class="flip-back-header"><i class="fa-solid fa-cubes"></i><span>IaC &amp; Config Mgmt</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">3</span><span class="fbs-lbl">Tools</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">100%</span><span class="fbs-lbl">IaC Cover</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">0</span><span class="fbs-lbl">Click-Ops</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-wrench"></i> Tools Used</div>
+                <div class="fbs-tools"><span>Terraform</span><span>Ansible</span><span>Azure ARM Templates (basic)</span><span>Remote State</span><span>Modules</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Modular Terraform for AKS, VNet, Key Vault &amp; MySQL</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> ARM template Ubuntu web-server deployment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Monitoring & Logging -->
+        <div class="flip-card-wrapper" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front mon-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-solid fa-gauge-high"></i></div>
+              <h3 class="flip-front-title">Monitoring &amp; Logging</h3>
+              <p class="flip-front-sub">Prometheus · Grafana · Azure Monitor</p>
+              <div class="flip-front-tags">
+                <span class="ftag ftag-mon"><i class="fa-solid fa-fire-flame-curved"></i> Prometheus</span>
+                <span class="ftag ftag-mon"><i class="fa-solid fa-chart-simple"></i> Grafana</span>
+                <span class="ftag"><i class="fa-brands fa-microsoft"></i> Azure Monitor</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back mon-theme-back">
+              <div class="flip-back-header"><i class="fa-solid fa-gauge-high"></i><span>Monitoring &amp; Logging</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">6</span><span class="fbs-lbl">Signals</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">24/7</span><span class="fbs-lbl">Visibility</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">Auto</span><span class="fbs-lbl">Alerting</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-wrench"></i> Tools Used</div>
+                <div class="fbs-tools"><span>Prometheus</span><span>Grafana</span><span>Azure Monitor</span><span>Log Analytics</span><span>Application Insights</span><span>Container Insights</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> kube-prometheus-stack + Grafana dashboards on AKS</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Azure Monitor alerts for CPU, memory &amp; pod restarts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Version Control & OS -->
+        <div class="flip-card-wrapper" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front plat-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-brands fa-git-alt"></i></div>
+              <h3 class="flip-front-title">Version Control &amp; OS</h3>
+              <p class="flip-front-sub">Git · GitHub · Linux · Nginx</p>
+              <div class="flip-front-tags">
+                <span class="ftag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span class="ftag"><i class="fa-brands fa-github"></i> GitHub</span>
+                <span class="ftag"><i class="fa-brands fa-linux"></i> Linux (Ubuntu)</span>
+                <span class="ftag">Nginx</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back plat-theme-back">
+              <div class="flip-back-header"><i class="fa-brands fa-linux"></i><span>Version Control &amp; OS</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">4</span><span class="fbs-lbl">Tools</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">5+</span><span class="fbs-lbl">Projects</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">∞</span><span class="fbs-lbl">Repos</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-wrench"></i> Tools Used</div>
+                <div class="fbs-tools"><span>Git</span><span>GitHub</span><span>Linux (Ubuntu)</span><span>Nginx</span><span>Shell Scripting</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Foundation across every deployment on this page</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Nginx reverse proxy on Ubuntu VMs &amp; ingress</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Networking & Security — bookend, full width -->
+        <div class="flip-card-wrapper sc-full" tabindex="0">
+          <div class="flip-card">
+            <div class="flip-front net-theme">
+              <div class="flip-front-glow"></div>
+              <div class="flip-front-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3 class="flip-front-title">Networking &amp; Security</h3>
+              <p class="flip-front-sub">TCP/IP · DNS · TLS · VNet · NSG · SSH</p>
+              <div class="flip-front-tags">
+                <span class="ftag ftag-net">TCP/IP</span>
+                <span class="ftag ftag-net">DNS</span>
+                <span class="ftag ftag-net">HTTP/HTTPS</span>
+                <span class="ftag ftag-net">SSL/TLS</span>
+                <span class="ftag ftag-net">VNet</span>
+                <span class="ftag ftag-net">Network Security Groups</span>
+                <span class="ftag ftag-net"><i class="fa-solid fa-terminal"></i> SSH</span>
+              </div>
+              <div class="flip-hint"><i class="fa-solid fa-rotate"></i> Hover to explore</div>
+            </div>
+            <div class="flip-back net-theme-back">
+              <div class="flip-back-header"><i class="fa-solid fa-shield-halved"></i><span>Networking &amp; Security</span></div>
+              <div class="flip-back-stats">
+                <div class="fbs-item"><span class="fbs-num">7</span><span class="fbs-lbl">Core Concepts</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">0</span><span class="fbs-lbl">Open Ports Left</span></div>
+                <div class="fbs-div"></div>
+                <div class="fbs-item"><span class="fbs-num">100%</span><span class="fbs-lbl">TLS Enforced</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-wrench"></i> Concepts &amp; Tools</div>
+                <div class="fbs-tools"><span>TCP/IP</span><span>DNS</span><span>HTTP / HTTPS</span><span>SSL / TLS</span><span>VNet</span><span>Network Security Groups</span><span>SSH</span></div>
+              </div>
+              <div class="flip-back-section">
+                <div class="fbs-title"><i class="fa-solid fa-diagram-project"></i> Applied In</div>
+                <ul class="fbs-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> NSG-scoped subnets &amp; SSH-only VM access on every Azure build</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> TLS termination end-to-end via WAF, Load Balancer &amp; Ingress</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <div class="sec-eyebrow"><i class="fa-solid fa-certificate"></i> Credentials</div>
+      <h2 class="sec-heading">Professional<br><em>Certifications</em></h2>
+      <p class="sec-sub">Industry-recognized credentials validating cloud and DevOps expertise.</p>
+      <div class="cert-layout">
+        <div class="cert-main" id="certMain">
+          <div class="cm-badge"><i class="fa-brands fa-python"></i></div>
+          <div class="cm-issuer">NPTEL</div>
+          <h3 class="cm-title">The Joy of Python</h3>
+          <p class="cm-desc">Completed the NPTEL course focused on Python fundamentals, logic building, and practical coding skills.</p>
+          <div class="cm-tags">
+            <span><i class="fa-solid fa-tag"></i> NPTEL</span>
+            <span><i class="fa-solid fa-circle-check"></i> Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="sec-eyebrow"><i class="fa-solid fa-satellite-dish"></i> Deployments</div>
+      <h2 class="sec-heading">Key <em>Deployments</em></h2>
+      <p class="sec-sub">Production-grade cloud engineering implementations with real-world architecture patterns.</p>
+      <div class="proj-filters">
+        <button class="pf-btn pf-active" data-filter="all"><i class="fa-solid fa-grip"></i> All</button>
+        <button class="pf-btn" data-filter="cicd"><i class="fa-solid fa-arrows-rotate"></i> CI/CD</button>
+        <button class="pf-btn" data-filter="iac"><i class="fa-solid fa-cubes"></i> Infrastructure</button>
+        <button class="pf-btn" data-filter="containers"><i class="fa-brands fa-docker"></i> Containers</button>
+      </div>
+
+      <!-- Project quick-jump rail: vertical dock on desktop, sticky horizontal strip on mobile/tablet.
+           Buttons are generated by JS (initProjectNavRail) so the project count only needs to change in one place. -->
+      <nav class="pnav-desktop" id="pnavDesktop" aria-label="Jump to project"></nav>
+      <nav class="pnav-mobile" id="pnavMobile" aria-label="Jump to project"></nav>
+
+      <div class="proj-featured" data-category="cicd" style="--accent:#10b981; --accent-dim:rgba(16,185,129,.10); --accent-border:rgba(16,185,129,.28);">
+        <i class="pf-watermark fa-solid fa-code-branch" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">PIPELINE DEPLOYMENT · Azure DevOps Automation</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">01</span>
+            <h3 class="pf-title"><em>E-commerce</em> Web Application Deployment</h3>
+            <p class="pf-desc">Deployed a .NET e-commerce web application to Azure App Service using Azure DevOps with a fully automated end-to-end CI/CD pipeline. Configured YAML-based Build and Release pipelines, automating code compilation, testing, and artifact packaging on every commit with zero manual steps.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-brands fa-github"></i></div><span>Code Push</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-vial"></i></div><span>Build &amp; Test</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-shield-halved"></i></div><span>Security Scan</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div><span>Deploy</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-brands fa-github"></i></div>
+              <div class="ptch"><i class="fa-brands fa-windows"></i></div>
+              <div class="ptch"><i class="fa-solid fa-code"></i></div>
+              <div class="ptch"><i class="fa-solid fa-server"></i></div>
+              <span class="ptch-more">Azure DevOps · YAML · .NET · App Service</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/zomato.net.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(0)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/AZURE%20ARM%20TEMPLATE.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-gauge-high"></i> DEPLOYMENT SPEED</div><div class="pfm-val"><span class="pfm-big">3x</span><span class="pfm-unit">Faster</span></div><div class="pfm-sub">Automated vs Manual</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-circle-check"></i> SUCCESS RATE</div><div class="pfm-val"><span class="pfm-big">98%</span><span class="pfm-unit">Build Pass</span></div><div class="pfm-sub">Stable Pipeline Runs</div></div>
+            </div>
+            <div class="pipeline-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-diagram-project"></i> PIPELINE STAGES</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Passing</span></div>
+              <div class="pviz-stages">
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Source</span><span class="pvs-t">~2s</span></div>
+                <div class="pviz-conn"></div>
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Build</span><span class="pvs-t">~45s</span></div>
+                <div class="pviz-conn"></div>
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Test</span><span class="pvs-t">~1m</span></div>
+                <div class="pviz-conn"></div>
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Deploy</span><span class="pvs-t">~3m</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 02 — ARM Template Deployment — REDESIGNED: interactive architecture diagram,
+           verified against the project's actual PDF (Internet → Public IP → NSG(80/22) → NIC →
+           VNet/Subnet → Linux VM → NGINX → Resource Group). Hover any node for details. -->
+      <div class="proj-featured proj-diagram-card" data-category="iac" data-project-index="1" style="--accent:#7c5cfc; --accent-dim:rgba(124,92,252,.10); --accent-border:rgba(124,92,252,.28);">
+        <i class="pf-watermark fa-solid fa-cube" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">ARM TEMPLATE DEPLOYMENT · Azure Infrastructure Automation</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body pf-body-stacked">
+          <div class="pf-left pf-left-full">
+            <span class="proj-num">02</span>
+            <h3 class="pf-title">Azure Infrastructure Automation <em>Using ARM Templates</em></h3>
+            <p class="pf-desc">Automated deployment of a Linux web server on Azure using a native ARM (JSON) template through the Portal's "Deploy a Custom Template" service. A single template provisions the Resource Group, VNet, Subnet, NSG, Public IP, NIC and Ubuntu VM, then installs NGINX with a custom HTML page — zero manual clicks after deploy.</p>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-solid fa-file-code"></i></div>
+              <div class="ptch"><i class="fa-brands fa-linux"></i></div>
+              <div class="ptch"><i class="fa-solid fa-network-wired"></i></div>
+              <span class="ptch-more">ARM Templates (JSON) · VNet · NSG · NIC · NGINX</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/Azure-ARM-Template.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(5)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/AZURE%20ARM%20TEMPLATE.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+
+          <div class="arch-canvas" id="archCanvas02">
+            <div class="ac-head"><span><i class="fa-solid fa-diagram-project"></i> INTERACTIVE ARCHITECTURE</span><span class="ac-hint"><i class="fa-solid fa-hand-pointer"></i> Hover a node</span></div>
+            <div class="ac-tree">
+              <div class="ac-node" style="--i:0" tabindex="0" data-tooltip="A single JSON file that declares every resource below — the whole deployment runs from this one template.">
+                <i class="fa-solid fa-file-code"></i><span>ARM Template</span>
+              </div>
+              <div class="ac-line" style="--i:1"></div>
+
+              <div class="ac-node" style="--i:2" tabindex="0" data-tooltip="Logical container (arm-web-rg) that groups every resource this deployment creates, in Central India.">
+                <i class="fa-brands fa-microsoft"></i><span>Resource Group</span>
+              </div>
+              <div class="ac-line" style="--i:3"></div>
+
+              <div class="ac-node" style="--i:4" tabindex="0" data-tooltip="Isolated virtual network the VM and its NIC live inside.">
+                <i class="fa-solid fa-network-wired"></i><span>Virtual Network</span>
+              </div>
+              <div class="ac-line" style="--i:5"></div>
+
+              <div class="ac-node" style="--i:6" tabindex="0" data-tooltip="Address range carved out of the VNet where the NIC is attached.">
+                <i class="fa-solid fa-diagram-project"></i><span>Subnet</span>
+              </div>
+
+              <svg class="ac-branch-svg ac-split" style="--i:7" viewBox="0 0 200 46" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <path d="M100 0 V16 M100 16 L34 16 V40 M100 16 L166 16 V40" />
+              </svg>
+              <div class="ac-branch-row">
+                <div class="ac-node ac-node-sm" style="--i:8" tabindex="0" data-tooltip="Firewall rule allowing inbound traffic only on ports 80 (HTTP) and 22 (SSH) — everything else is blocked.">
+                  <i class="fa-solid fa-shield-halved"></i><span>NSG</span><small>Ports 80 &amp; 22</small>
+                </div>
+                <div class="ac-node ac-node-sm" style="--i:8" tabindex="0" data-tooltip="Static public IP address that makes the VM reachable from the internet.">
+                  <i class="fa-solid fa-globe"></i><span>Public IP</span>
+                </div>
+              </div>
+              <svg class="ac-branch-svg ac-merge" style="--i:9" viewBox="0 0 200 46" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <path d="M100 46 V30 M100 30 L34 30 V6 M100 30 L166 30 V6" />
+              </svg>
+
+              <div class="ac-node" style="--i:10" tabindex="0" data-tooltip="Network interface binding the NSG and Public IP to the virtual machine.">
+                <i class="fa-solid fa-ethernet"></i><span>NIC</span>
+              </div>
+              <div class="ac-line" style="--i:11"></div>
+
+              <div class="ac-node ac-node-key" style="--i:12" tabindex="0" data-tooltip="Ubuntu 18.04 VM (Standard D2s v3) provisioned automatically — no manual VM creation.">
+                <i class="fa-brands fa-linux"></i><span>Ubuntu VM</span>
+              </div>
+              <div class="ac-line" style="--i:13"></div>
+
+              <div class="ac-node" style="--i:14" tabindex="0" data-tooltip="Installed and configured automatically during deployment, serving a custom HTML page.">
+                <i class="fa-solid fa-server"></i><span>NGINX + Custom HTML</span>
+              </div>
+              <div class="ac-line" style="--i:15"></div>
+
+              <div class="ac-node ac-node-live" style="--i:16" tabindex="0" data-tooltip="Reachable at http://&lt;public-ip&gt; — verified live in the browser right after deployment completes.">
+                <i class="fa-solid fa-circle-check"></i><span>Live Website</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 03 — Portfolio on Azure Storage -->
+      <div class="proj-featured" data-category="iac" style="--accent:#4f8fff; --accent-dim:rgba(79,143,255,.10); --accent-border:rgba(79,143,255,.28);">
+        <i class="pf-watermark fa-solid fa-globe" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">STATIC WEBSITE HOSTING · Azure Storage Account</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Hosted</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">03</span>
+            <h3 class="pf-title">Personal Portfolio <em>Hosted on Azure Storage</em></h3>
+            <p class="pf-desc">Built a responsive portfolio website with HTML, CSS, and JavaScript, then hosted it as a static website on Azure Storage Account. Configured the static website feature, uploaded assets, and published it through the Azure Storage endpoint.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-code"></i></div><span>Build Site</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-box-archive"></i></div><span>Upload Blob</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-gears"></i></div><span>Configure $web</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-globe"></i></div><span>Live Endpoint</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-html5"></i></div>
+              <div class="ptch"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="ptch"><i class="fa-brands fa-js"></i></div>
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <span class="ptch-more">Azure Storage · Static Website Hosting</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/Portfolio.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(6)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/sivashankar%20Portfolio.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-bolt"></i> LOAD TIME</div><div class="pfm-val"><span class="pfm-big">&lt;1s</span><span class="pfm-unit">First Paint</span></div><div class="pfm-sub">Static Assets, No Server</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-circle-check"></i> UPTIME</div><div class="pfm-val"><span class="pfm-big">99.9</span><span class="pfm-unit">% SLA</span></div><div class="pfm-sub">Azure Storage-Backed</div></div>
+            </div>
+            <div class="browser-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-globe"></i> LIVE ENDPOINT</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Online</span></div>
+              <div class="bv-window">
+                <div class="bv-bar">
+                  <span class="bv-dot bv-r"></span><span class="bv-dot bv-y"></span><span class="bv-dot bv-g"></span>
+                  <div class="bv-url"><i class="fa-solid fa-lock"></i> sivastorage.z13.web.core.windows.net</div>
+                </div>
+                <div class="bv-page">
+                  <div class="bv-line bv-line-lg"></div>
+                  <div class="bv-line"></div>
+                  <div class="bv-line bv-line-sm"></div>
+                  <div class="bv-chip"><i class="fa-solid fa-check"></i> $web container served</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 — Manual two-tier -->
+      <div class="proj-featured" data-category="iac" style="--accent:#22d3ee; --accent-dim:rgba(34,211,238,.10); --accent-border:rgba(34,211,238,.28);">
+        <i class="pf-watermark fa-solid fa-sitemap" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">MANUAL AZURE ARCHITECTURE · Two-Tier Network Design</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">04</span>
+            <h3 class="pf-title">Manual Two-Tier Infrastructure <em>for ElectroGo</em></h3>
+            <p class="pf-desc">Provisioned a secure two-tier Azure architecture for Electro GO EV Charging Station Management through manual resource setup. Configured VNet, public/private subnets, NSGs, route tables, NAT Gateway, Load Balancer, Ubuntu VM, and private MySQL Flexible Server connectivity.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-diagram-project"></i></div><span>Public Subnet</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-scale-balanced"></i></div><span>NAT + LB</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-lock"></i></div><span>Private Subnet</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-database"></i></div><span>MySQL</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="ptch"><i class="fa-solid fa-database"></i></div>
+              <div class="ptch"><i class="fa-solid fa-shield-halved"></i></div>
+              <span class="ptch-more">VNet · NSG · NAT Gateway · Load Balancer</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(7)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/ELECTRO%20GO%20APPLICATION%20MANUAL%20DEPLOYMENT%20ON%20MICROSOFT%20AZURE.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-layer-group"></i> NETWORK TIERS</div><div class="pfm-val"><span class="pfm-big">2</span><span class="pfm-unit">Public / Private</span></div><div class="pfm-sub">Segmented by Design</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-lock"></i> DB EXPOSURE</div><div class="pfm-val"><span class="pfm-big">0</span><span class="pfm-unit">Public IPs</span></div><div class="pfm-sub">Private Subnet Only</div></div>
+            </div>
+            <div class="network-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-sitemap"></i> NETWORK TIERS</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Isolated</span></div>
+              <div class="nv-stack">
+                <div class="nv-tier"><i class="fa-solid fa-globe"></i> Public Subnet — Load Balancer</div>
+                <div class="nv-connector"></div>
+                <div class="nv-tier"><i class="fa-solid fa-scale-balanced"></i> NAT Gateway — Outbound Only</div>
+                <div class="nv-connector"></div>
+                <div class="nv-tier"><i class="fa-solid fa-server"></i> Private Subnet — App VM</div>
+                <div class="nv-connector"></div>
+                <div class="nv-tier nv-tier-end"><i class="fa-solid fa-database"></i> MySQL Flexible Server</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 — Terraform automation -->
+      <div class="proj-featured" data-category="iac" style="--accent:#9b7dff; --accent-dim:rgba(155,125,255,.10); --accent-border:rgba(155,125,255,.28);">
+        <i class="pf-watermark fa-solid fa-cubes" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">TERRAFORM AUTOMATION · Modular Infrastructure as Code</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">05</span>
+            <h3 class="pf-title">Terraform Automation <em>for Two-Tier Deployment</em></h3>
+            <p class="pf-desc">Automated a two-tier ElectroGO ASP.NET Core deployment on Azure using Terraform. Provisioned networking, compute, database, and load balancing through reusable modules, with Linux VM bootstrap scripts installing .NET 8, Nginx, and app dependencies.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-cubes"></i></div><span>Write Modules</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-magnifying-glass"></i></div><span>terraform plan</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-bolt"></i></div><span>terraform apply</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-brands fa-linux"></i></div><span>Bootstrap VM</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-solid fa-cubes"></i></div>
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-brands fa-linux"></i></div>
+              <div class="ptch"><i class="fa-solid fa-terminal"></i></div>
+              <span class="ptch-more">Terraform · Remote State · Bootstrap Script</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo-Terraform.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(8)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/TERRAFORM-AUTOMATION.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-cubes"></i> MODULES</div><div class="pfm-val"><span class="pfm-big">5</span><span class="pfm-unit">Reusable</span></div><div class="pfm-sub">Network · Compute · DB · LB</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-clock"></i> APPLY TIME</div><div class="pfm-val"><span class="pfm-big">~4</span><span class="pfm-unit">Minutes</span></div><div class="pfm-sub">Full Stack, One Command</div></div>
+            </div>
+            <div class="tf-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-cubes"></i> MODULE GRAPH</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Applied</span></div>
+              <div class="tf-graph">
+                <div class="tf-mods">
+                  <div class="tf-mod"><i class="fa-solid fa-network-wired"></i> Network</div>
+                  <div class="tf-mod"><i class="fa-solid fa-server"></i> Compute</div>
+                  <div class="tf-mod"><i class="fa-solid fa-database"></i> Database</div>
+                  <div class="tf-mod"><i class="fa-solid fa-scale-balanced"></i> Load Balancer</div>
+                </div>
+                <div class="tf-core"><i class="fa-solid fa-cube"></i> main.tf apply</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 — CI/CD with Azure DevOps + Terraform -->
+      <div class="proj-featured" data-category="cicd" style="--accent:#14b8a6; --accent-dim:rgba(20,184,166,.10); --accent-border:rgba(20,184,166,.28);">
+        <i class="pf-watermark fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">CI/CD PIPELINE AUTOMATION · Azure DevOps + Terraform</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">06</span>
+            <h3 class="pf-title">End-to-End CI/CD <em>with Azure DevOps &amp; Terraform</em></h3>
+            <p class="pf-desc">Built an automated CI/CD pipeline for the ElectroGo EV Charging station using Azure DevOps Classic Pipelines. Automated build, test, Terraform infrastructure provisioning, and deployment of ASP.NET Core to Azure VMs, eliminating manual release steps.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-brands fa-github"></i></div><span>Commit</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-vial"></i></div><span>Build &amp; Test</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-cubes"></i></div><span>Terraform</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-server"></i></div><span>Deploy VM</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-solid fa-cubes"></i></div>
+              <div class="ptch"><i class="fa-solid fa-window-restore"></i></div>
+              <div class="ptch"><i class="fa-brands fa-git-alt"></i></div>
+              <span class="ptch-more">Classic Pipelines · Terraform · Azure VM</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo-Kubernetes.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(9)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/ELECTRO%20GO%20CICD%20DEPLOYMENT.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-hand"></i> MANUAL STEPS</div><div class="pfm-val"><span class="pfm-big">0</span><span class="pfm-unit">Zero-Touch</span></div><div class="pfm-sub">Fully Automated Release</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-circle-check"></i> PIPELINE</div><div class="pfm-val"><span class="pfm-big">4</span><span class="pfm-unit">Stages</span></div><div class="pfm-sub">Commit to Running VM</div></div>
+            </div>
+            <div class="pipeline-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-diagram-project"></i> PIPELINE STAGES</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Passing</span></div>
+              <div class="pviz-stages">
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Source</span><span class="pvs-t">~2s</span></div>
+                <div class="pviz-conn"></div>
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Build</span><span class="pvs-t">~40s</span></div>
+                <div class="pviz-conn"></div>
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Terraform</span><span class="pvs-t">~3m</span></div>
+                <div class="pviz-conn"></div>
+                <div class="pviz-stage sd"><div class="pvs-dot"></div><span class="pvs-n">Deploy</span><span class="pvs-t">~50s</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 — Docker + ACR -->
+      <div class="proj-featured" data-category="containers" style="--accent:#2496ed; --accent-dim:rgba(36,150,237,.10); --accent-border:rgba(36,150,237,.28);">
+        <i class="pf-watermark fa-brands fa-docker" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">CONTAINERIZATION &amp; ACR · Docker Multi-Stage Build</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">07</span>
+            <h3 class="pf-title">Docker Containerization <em>&amp; ACR Deployment</em></h3>
+            <p class="pf-desc">Containerized the ElectroGo EV Charging Platform with Docker and deployed it as a two-tier application on an Azure Ubuntu VM. Built multi-stage images, pushed them to Azure Container Registry, used Managed Identity authentication, and deployed with Docker Compose.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-brands fa-docker"></i></div><span>Build Image</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-boxes-stacked"></i></div><span>Push ACR</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-key"></i></div><span>Managed Identity Pull</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-server"></i></div><span>Compose Up</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-docker"></i></div>
+              <div class="ptch"><i class="fa-solid fa-boxes-stacked"></i></div>
+              <div class="ptch"><i class="fa-solid fa-key"></i></div>
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <span class="ptch-more">Docker Compose · Azure Container Registry</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo-Kubernetes.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(10)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/DOCKER%20CONTAINERZATION.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-compress"></i> IMAGE SIZE</div><div class="pfm-val"><span class="pfm-big">−60</span><span class="pfm-unit">% Smaller</span></div><div class="pfm-sub">Multi-Stage Build</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-key"></i> AUTH</div><div class="pfm-val"><span class="pfm-big">0</span><span class="pfm-unit">Stored Secrets</span></div><div class="pfm-sub">Managed Identity Only</div></div>
+            </div>
+            <div class="docker-viz">
+              <div class="pviz-head"><span><i class="fa-brands fa-docker"></i> IMAGE LAYERS</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Built</span></div>
+              <div class="dk-stack">
+                <div class="dk-layer" style="--w:100%"><i class="fa-brands fa-linux"></i> Base — Ubuntu</div>
+                <div class="dk-layer" style="--w:86%"><i class="fa-solid fa-layer-group"></i> .NET Runtime</div>
+                <div class="dk-layer" style="--w:72%"><i class="fa-solid fa-cube"></i> App Dependencies</div>
+                <div class="dk-layer dk-layer-top" style="--w:58%"><i class="fa-solid fa-code"></i> ElectroGo App</div>
+              </div>
+              <div class="dk-push"><i class="fa-solid fa-arrow-right-to-bracket"></i> Pushed to ACR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 — AKS Deployment -->
+      <div class="proj-featured" data-category="containers" style="--accent:#6366f1; --accent-dim:rgba(99,102,241,.10); --accent-border:rgba(99,102,241,.28);">
+        <i class="pf-watermark fa-solid fa-circle-nodes" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">AKS DEPLOYMENT · Kubernetes on Azure</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">08</span>
+            <h3 class="pf-title">Cloud Infrastructure Automation <em>&amp; AKS Deployment</em></h3>
+            <p class="pf-desc">Built a production-ready infrastructure for ElectroGo using Terraform and AKS. Containerized the app, managed secrets in Azure Key Vault, deployed workloads with Helm, and automated delivery through Azure DevOps CI/CD.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-cubes"></i></div><span>Terraform AKS</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-anchor"></i></div><span>Helm Deploy</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-key"></i></div><span>Key Vault Secrets</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-circle-nodes"></i></div><span>HPA Scale</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-solid fa-cubes"></i></div>
+              <div class="ptch"><i class="fa-solid fa-anchor"></i></div>
+              <div class="ptch"><i class="fa-solid fa-key"></i></div>
+              <span class="ptch-more">AKS · Helm · Key Vault CSI · HPA</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo-Kubernetes.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(11)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/ElectroGo%20Platform%20End-to-End%20Infrastructure%20Provisioning%20an%20AKS.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-circle-nodes"></i> POD REPLICAS</div><div class="pfm-val"><span class="pfm-big">2–6</span><span class="pfm-unit">Auto-scaled</span></div><div class="pfm-sub">HPA on CPU Load</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-key"></i> SECRETS</div><div class="pfm-val"><span class="pfm-big">0</span><span class="pfm-unit">Hardcoded</span></div><div class="pfm-sub">Key Vault CSI Driver</div></div>
+            </div>
+            <div class="k8s-viz">
+              <div class="k8s-lbl"><i class="fa-solid fa-rocket"></i> AKS Cluster</div>
+              <div class="k8s-pods">
+                <div class="k8s-pod"><i class="fa-brands fa-docker"></i><span>Pod 1</span></div>
+                <div class="k8s-pod"><i class="fa-brands fa-docker"></i><span>Pod 2</span></div>
+                <div class="k8s-pod k8s-hpa"><i class="fa-solid fa-plus"></i><span>HPA</span></div>
+              </div>
+              <div class="k8s-bottom">
+                <div class="k8s-svc"><i class="fa-solid fa-network-wired"></i> Service</div>
+                <i class="fa-solid fa-arrow-down" style="color:var(--vi2);font-size:.58rem;opacity:.5"></i>
+                <div class="k8s-ing"><i class="fa-solid fa-globe"></i> Ingress</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 09 — AKS Security Hardening -->
+      <div class="proj-featured" data-category="containers" style="--accent:#f87171; --accent-dim:rgba(248,113,113,.10); --accent-border:rgba(248,113,113,.28);">
+        <i class="pf-watermark fa-solid fa-shield-halved" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">AKS SECURITY · Defense-in-Depth Hardening</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">09</span>
+            <h3 class="pf-title">Enterprise Security Hardening <em>for AKS</em></h3>
+            <p class="pf-desc">Implemented enterprise-grade security for the ElectroGo platform on AKS by securing identities, workloads, network traffic, and application secrets. Integrated Azure Front Door, WAF, Key Vault, Azure RBAC, Entra ID, Defender for Containers, Kubernetes Network Policies, and automated DevSecOps validation in Azure DevOps CI/CD.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-globe"></i></div><span>Front Door + WAF</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-network-wired"></i></div><span>NSG + NetPol</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-user-shield"></i></div><span>RBAC + Entra ID</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-key"></i></div><span>Key Vault</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-solid fa-globe"></i></div>
+              <div class="ptch"><i class="fa-solid fa-user-shield"></i></div>
+              <div class="ptch"><i class="fa-solid fa-key"></i></div>
+              <span class="ptch-more">Front Door · WAF · RBAC · Defender for Containers</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo-Security-Implementation.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(12)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/Phase%206A%20%E2%80%93%20Security%20Hardening%20Using%20Microsoft%20Azure.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-shield-halved"></i> SECURITY LAYERS</div><div class="pfm-val"><span class="pfm-big">5</span><span class="pfm-unit">Defense-in-Depth</span></div><div class="pfm-sub">Edge to Secret Store</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-key"></i> EXPOSURE</div><div class="pfm-val"><span class="pfm-big">0</span><span class="pfm-unit">Hardcoded Secrets</span></div><div class="pfm-sub">Automated Validation</div></div>
+            </div>
+            <div class="shield-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-shield-halved"></i> DEFENSE LAYERS</span><span class="pviz-pass"><i class="fa-solid fa-lock"></i> Hardened</span></div>
+              <div class="sv-layers">
+                <div class="sv-layer" style="width:100%"><i class="fa-solid fa-globe"></i> Front Door + WAF</div>
+                <div class="sv-layer" style="width:84%"><i class="fa-solid fa-network-wired"></i> NSG + Network Policy</div>
+                <div class="sv-layer" style="width:68%"><i class="fa-solid fa-user-shield"></i> RBAC + Entra ID</div>
+                <div class="sv-layer" style="width:52%"><i class="fa-solid fa-key"></i> Key Vault CSI</div>
+                <div class="sv-layer" style="width:36%"><i class="fa-solid fa-shield-virus"></i> Defender for Containers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 — AKS Observability -->
+      <div class="proj-featured" data-category="containers" style="--accent:#f59e0b; --accent-dim:rgba(245,158,11,.10); --accent-border:rgba(245,158,11,.28);">
+        <i class="pf-watermark fa-solid fa-chart-line" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">AKS OBSERVABILITY · Monitoring &amp; Alerting</span><div class="pf-badges"><span class="pfb-live"><span class="live-dot"></span>Live</span><span class="pfb-prod">Production</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">10</span>
+            <h3 class="pf-title">Cloud Monitoring &amp; Observability <em>for AKS</em></h3>
+            <p class="pf-desc">Built a comprehensive monitoring and observability solution for ElectroGo on AKS. Integrated Azure Monitor, Log Analytics, Container Insights, Application Insights, Prometheus, Grafana, and Azure Monitor Alerts to deliver real-time visibility into performance, infrastructure health, centralized logging, and proactive incident detection.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-satellite-dish"></i></div><span>Collect</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-layer-group"></i></div><span>Aggregate</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-chart-line"></i></div><span>Visualize</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-bell"></i></div><span>Alert</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-microsoft"></i></div>
+              <div class="ptch"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <div class="ptch"><i class="fa-solid fa-chart-simple"></i></div>
+              <div class="ptch"><i class="fa-solid fa-bell"></i></div>
+              <span class="ptch-more">Prometheus · Grafana · Log Analytics · Alerts</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929/ElectroGo-Monitoring-Observibility.git" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+              <button class="btn-ghost btn-sm" onclick="openModal(13)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/ElectroGo%20Platform%20%E2%80%93%20Phase%206B%20Monitoring%20and%20Observability.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Project PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-satellite-dish"></i> SIGNALS</div><div class="pfm-val"><span class="pfm-big">6</span><span class="pfm-unit">Sources</span></div><div class="pfm-sub">Metrics · Logs · Traces</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-bell"></i> DETECTION</div><div class="pfm-val"><span class="pfm-big">Auto</span><span class="pfm-unit">Alerting</span></div><div class="pfm-sub">Proactive, Not Reactive</div></div>
+            </div>
+            <div class="gauge-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-chart-line"></i> LIVE TELEMETRY</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Live</span></div>
+              <div class="gv-bars">
+                <div class="gv-bar" style="--h:42%"></div>
+                <div class="gv-bar" style="--h:68%"></div>
+                <div class="gv-bar" style="--h:55%"></div>
+                <div class="gv-bar" style="--h:80%"></div>
+                <div class="gv-bar" style="--h:60%"></div>
+                <div class="gv-bar" style="--h:74%"></div>
+                <div class="gv-bar" style="--h:48%"></div>
+              </div>
+              <div class="gv-foot">
+                <span class="gv-alert"><span class="gv-alert-dot"></span> 0 active alerts</span>
+                <span class="gv-cpu">CPU <b>34%</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- 11 — 3-Tier Banking Web Application on AWS -->
+      <div class="proj-featured" data-category="iac" style="--accent:#ff9900; --accent-dim:rgba(255,153,0,.08); --accent-border:rgba(255,153,0,.20);">
+        <i class="pf-watermark fa-brands fa-aws" aria-hidden="true"></i>
+        <div class="pf-topbar"><span class="pf-crumb">3-TIER BANKING WEB APP · AWS</span><div class="pf-badges"><span class="pfb-prod">Manual Deploy</span></div></div>
+        <div class="pf-body">
+          <div class="pf-left">
+            <span class="proj-num">11</span>
+            <h3 class="pf-title">3-Tier Banking Web Application <em>on AWS</em></h3>
+            <p class="pf-desc">Built and manually deployed a secure 3-tier banking web application on AWS using a separated Web, Application, and Database architecture. Configured VPC, public and private subnets, Application Load Balancer, EC2, NGINX, Flask/Gunicorn, Amazon RDS MySQL, Security Groups, and Bastion Host access to provide secure and controlled communication between application tiers.</p>
+            <div class="arch-flow">
+              <div class="arch-step"><div class="arch-icon"><i class="fa-brands fa-aws"></i></div><span>ALB → NGINX</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-server"></i></div><span>Flask / Gunicorn</span></div>
+              <div class="arch-arr"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="arch-step"><div class="arch-icon"><i class="fa-solid fa-database"></i></div><span>RDS MySQL (Private)</span></div>
+            </div>
+            <div class="pf-tech-row">
+              <div class="ptch"><i class="fa-brands fa-aws"></i></div>
+              <div class="ptch"><i class="fa-solid fa-server"></i></div>
+              <div class="ptch"><i class="fa-solid fa-network-wired"></i></div>
+              <span class="ptch-more">AWS · EC2 · VPC · ALB · NGINX · Flask · Gunicorn · RDS MySQL · Security Groups</span>
+            </div>
+            <div class="pf-actions">
+              <a href="https://github.com/Sivashankar9929" target="_blank" rel="noopener" class="btn-primary btn-sm"><i class="fa-brands fa-github"></i> Source</a>
+              <button class="btn-ghost btn-sm" onclick="openModalByNum(11)"><i class="fa-solid fa-diagram-project"></i> View Architecture</button>
+              <a href="Project%20PDF/AWS%20Manual%20Deployment.pdf" target="_blank" rel="noopener" class="btn-ghost btn-sm"><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
+            </div>
+          </div>
+          <div class="pf-right">
+            <div class="pf-metrics">
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-shield-halved"></i> NETWORK SEGMENTATION</div><div class="pfm-val"><span class="pfm-big">3</span><span class="pfm-unit">Tiers</span></div><div class="pfm-sub">ALB · Web · App · DB</div></div>
+              <div class="pf-metric"><div class="pfm-lbl"><i class="fa-solid fa-lock"></i> ADMIN ACCESS</div><div class="pfm-val"><span class="pfm-big">Bastion</span><span class="pfm-unit">Host</span></div><div class="pfm-sub">Secure SSH Management</div></div>
+            </div>
+            <div class="network-viz">
+              <div class="pviz-head"><span><i class="fa-solid fa-sitemap"></i> TRAFFIC FLOW</span><span class="pviz-pass"><i class="fa-solid fa-circle-check"></i> Secured</span></div>
+              <div class="nv-stack">
+                <div class="nv-tier"><i class="fa-brands fa-aws"></i> Application Load Balancer — HTTPS</div>
+                <div class="nv-connector"></div>
+                <div class="nv-tier"><i class="fa-solid fa-server"></i> NGINX — Web Tier (EC2)</div>
+                <div class="nv-connector"></div>
+                <div class="nv-tier"><i class="fa-solid fa-gears"></i> Flask / Gunicorn — App Tier</div>
+                <div class="nv-connector"></div>
+                <div class="nv-tier nv-tier-end"><i class="fa-solid fa-database"></i> RDS MySQL — Private Subnet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="achievements">
+    <div class="section-inner">
+      <div class="sec-eyebrow"><i class="fa-solid fa-trophy"></i> Athletics &amp; Accolades</div>
+      <h2 class="sec-heading">Beyond the<br><em>Cloud</em></h2>
+      <p class="sec-sub">Discipline, teamwork, and competitive drive — proven on national and state-level stages.</p>
+      <div class="ach-stats-bar">
+        <div class="asb-item"><i class="fa-solid fa-medal asb-icon asb-bronze"></i><div><span class="asb-n" data-target="1">0</span><span class="asb-l">National Certificate</span></div></div>
+        <div class="asb-div"></div>
+        <div class="asb-item"><i class="fa-solid fa-medal asb-icon asb-bronze"></i><div><span class="asb-n" data-target="3">0</span><span class="asb-l">Bronze Medals</span></div></div>
+        <div class="asb-div"></div>
+        <div class="asb-item"><i class="fa-solid fa-users asb-icon asb-teal"></i><div><span class="asb-n" data-target="200" data-suffix="+">0+</span><span class="asb-l">Athletes Competed</span></div></div>
+        <div class="asb-div"></div>
+        <div class="asb-item"><i class="fa-solid fa-flag asb-icon asb-cyan"></i><div><span class="asb-n" data-target="3">0</span><span class="asb-l">State/National Events</span></div></div>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card ach-featured">
+          <div class="ach-top"><div class="ach-medal bronze-m"><i class="fa-solid fa-medal"></i> Bronze</div><div class="ach-lvl lvl-nat"><i class="fa-solid fa-flag"></i> National</div></div>
+          <div class="ach-icon-wrap ach-iw-bronze"><i class="fa-solid fa-running"></i></div>
+          <h3>Rural Federation Games of India</h3>
+          <p class="ach-org"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</p>
+          <p>Represented Andhra Pradesh at the RGFI — a prestigious national-level multi-sport event. Earned a national certificate and bronze medal for outstanding athletic performance.</p>
+          <div class="ach-tags"><span><i class="fa-solid fa-certificate"></i> National Certificate</span><span><i class="fa-solid fa-medal"></i> Bronze Medal</span><span>State Representative</span></div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-top"><div class="ach-medal teal-m"><i class="fa-solid fa-star"></i> Finalist</div><div class="ach-lvl lvl-state"><i class="fa-solid fa-map"></i> State Level</div></div>
+          <div class="ach-icon-wrap ach-iw-teal"><i class="fa-solid fa-person-running"></i></div>
+          <h3>Acharya Nagarjuna University Athletics</h3>
+          <p class="ach-org"><i class="fa-solid fa-university"></i> State-level Athletics Event</p>
+          <p>Competed among 200+ athletes. Developed strategic planning and competitive edge through intensive training.</p>
+          <div class="ach-tags"><span><i class="fa-solid fa-users"></i> 200+ Athletes</span><span><i class="fa-solid fa-trophy"></i> Top Performer</span></div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-top"><div class="ach-medal bronze-m"><i class="fa-solid fa-medal"></i> Bronze</div><div class="ach-lvl lvl-cluster"><i class="fa-solid fa-network-wired"></i> CBSE Cluster</div></div>
+          <div class="ach-icon-wrap ach-iw-blue"><i class="fa-solid fa-people-group"></i></div>
+          <h3>CBSE South Cluster — Kho Kho</h3>
+          <p class="ach-org"><i class="fa-solid fa-location-dot"></i> Rajahmundry, Andhra Pradesh</p>
+          <p>Bronze medal in Kho Kho at the CBSE South Cluster Zone tournament, demonstrating discipline and team coordination.</p>
+          <div class="ach-tags"><span><i class="fa-solid fa-medal"></i> Bronze Medal</span><span><i class="fa-solid fa-shield"></i> Team Sport</span><span>CBSE Zone</span></div>
+        </div>
+      </div>
+      <div class="ach-skills-strip">
+        <span class="ass-label"><i class="fa-solid fa-bolt"></i> Skills from Athletics</span>
+        <div class="ass-pills">
+          <span><i class="fa-solid fa-users-gear"></i> Teamwork</span>
+          <span><i class="fa-solid fa-chess"></i> Strategic Planning</span>
+          <span><i class="fa-solid fa-fire"></i> Competitive Drive</span>
+          <span><i class="fa-solid fa-dumbbell"></i> Discipline</span>
+          <span><i class="fa-solid fa-handshake"></i> Leadership</span>
+          <span><i class="fa-solid fa-gauge-high"></i> Pressure Performance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <div class="sec-eyebrow"><i class="fa-solid fa-satellite-dish"></i> Contact</div>
+      <h2 class="sec-heading">Let's <em>Launch</em><br>a Project</h2>
+      <p class="sec-sub">Open to Cloud Engineer and DevSecOps Engineer roles. Reach out directly or connect on LinkedIn.</p>
+      <div class="contact-layout">
+        <div class="contact-main">
+          <div class="cm-bg-text">HIRE</div>
+          <h3>Ready to Connect?</h3>
+          <p>I'm actively looking for cloud engineering opportunities. Let's talk about how I can contribute to your team.</p>
+          <div class="contact-links">
+            <a href="mailto:Sivashankar9929@gmail.com" class="contact-link"><div class="cl-ico email-ic"><i class="fa-solid fa-envelope"></i></div><div class="cl-text"><span>Email</span><strong>Sivashankar9929@gmail.com</strong></div><i class="fa-solid fa-arrow-up-right-from-square cl-arr"></i></a>
+            <a href="https://www.linkedin.com/in/katta-siva-shankar-004937258" target="_blank" rel="noopener" class="contact-link"><div class="cl-ico li-ic"><i class="fa-brands fa-linkedin-in"></i></div><div class="cl-text"><span>LinkedIn</span><strong>katta-siva-shankar-004937258</strong></div><i class="fa-solid fa-arrow-up-right-from-square cl-arr"></i></a>
+            <a href="https://github.com/Sivashankar9929" target="_blank" rel="noopener" class="contact-link"><div class="cl-ico gh-ic"><i class="fa-brands fa-github"></i></div><div class="cl-text"><span>GitHub</span><strong>Sivashankar9929</strong></div><i class="fa-solid fa-arrow-up-right-from-square cl-arr"></i></a>
+            <a href="tel:+919676568928" class="contact-link"><div class="cl-ico ph-ic"><i class="fa-solid fa-phone"></i></div><div class="cl-text"><span>Phone</span><strong>+91 9676568928</strong></div><i class="fa-solid fa-arrow-up-right-from-square cl-arr"></i></a>
+          </div>
+          <a class="btn-primary" href="Katta_Siva_Shankar_Resume.pdf" style="margin-top:26px;display:inline-flex" onclick="downloadResume(event, 'Katta_Siva_Shankar_Resume.pdf'); return false;"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+        </div>
+        <div class="contact-side">
+          <div class="loc-card">
+            <div class="loc-map"><div class="loc-dot"><div class="loc-ping"></div><i class="fa-solid fa-location-dot"></i></div></div>
+            <div class="loc-text"><h4><i class="fa-solid fa-map-pin"></i> Based in Hyderabad, Telangana</h4><p>Open to Hyderabad · Bangalore · Chennai · Remote roles</p></div>
+          </div>
+          <div class="open-card"><div class="oc-dot"></div><div><h4>Open to Opportunities</h4><p>Seeking Cloud Engineer / DevSecOps positions with immediate availability.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="fl-left"><span class="fl-logo">KSS</span><span id="footerYear"></span></div>
+      <span class="fl-tag">Building Cloud Infrastructure That Scales</span>
+      <div class="fl-icons">
+        <a href="https://www.linkedin.com/in/katta-siva-shankar-004937258" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Sivashankar9929" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:Sivashankar9929@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-bd" id="modalBd"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-content">
+        <span class="modal-num" id="mNum"></span>
+        <h2 class="modal-title" id="mTitle"></h2>
+
+        <div class="modal-tabs">
+          <button class="modal-tab modal-tab-active" id="tabOverview" onclick="showModalTab('overview')"><i class="fa-solid fa-circle-info"></i> Overview</button>
+          <button class="modal-tab" id="tabVideo" onclick="showModalTab('video')"><i class="fa-solid fa-play"></i> Demo Video</button>
+        </div>
+
+        <div class="modal-pane" id="paneOverview">
+          <p class="modal-desc" id="mDesc"></p>
+          <div class="modal-sec"><h4><i class="fa-solid fa-microchip"></i> Tech Stack</h4><div class="modal-tech" id="mTech"></div></div>
+          <div class="modal-sec"><h4><i class="fa-solid fa-diagram-project"></i> Architecture Focus</h4><p id="mArch"></p></div>
+          <a class="btn-primary" id="mLink" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+
+        <div class="modal-pane modal-pane-hidden" id="paneVideo">
+          <div class="modal-video-wrap" id="mVideoWrap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
